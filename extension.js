@@ -1,23 +1,12 @@
 ({
-    name: "Sound", // Category Name
-    description: "Sound sensor",
+    name: "Matrix", // Category Name
+    description: "Led Matrix 5x5",
     author: "BeeBlock",
-    category: "Sensors",
+    category: "Display",
     version: "1.0.0",
-    icon: "/static/mic.png", // Category icon
-    color: "#0050a1", // Category color (recommend some blocks color)
+    icon: "/static/matrix.png", // Category icon
+    color: "#009777", // Category color (recommend some blocks color)
     blocks: [ // Blocks in Category
-        "noise_sensor",
-        {
-            xml: `
-                <block type="noise_threshold">
-                    <value name="threshold">
-                        <shadow type="math_number">
-                            <field name="NUM">50</field>
-                        </shadow>
-                    </value>
-                </block>
-            `
-        }
+        "display_custom",
     ]
 });
