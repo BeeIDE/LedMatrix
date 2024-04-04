@@ -87,7 +87,7 @@ class matrix:
 
   def show():
     if matrix.LED_NUM == 25:
-      reverse_matrix()
+      matrix.reverse_matrix()
     matrix.np.write()
 
   #write raw rgb value buffer to matrix
