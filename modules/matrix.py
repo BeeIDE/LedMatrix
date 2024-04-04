@@ -79,7 +79,15 @@ class matrix:
     matrix.np.fill((0,0,0))
     if matrix.INSTA_DRAW: matrix.show()
 
+  def reverse_matrix():
+    matrix.np[5], matrix.np[9] = matrix.np[9], matrix.np[5]
+    matrix.np[6], matrix.np[8] = matrix.np[8], matrix.np[6]
+    matrix.np[15], matrix.np[19] = matrix.np[19], matrix.np[15]
+    matrix.np[16], matrix.np[18] = matrix.np[18], matrix.np[16]
+
   def show():
+    if matrix.LED_NUM == 25:
+      reverse_matrix()
     matrix.np.write()
 
   #write raw rgb value buffer to matrix
